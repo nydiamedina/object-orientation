@@ -115,8 +115,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+const totalPopulation = obj => {
+  let {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+}
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -129,8 +131,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+const ingredients = obj => {
+  let {carb, fat, protein} = obj;
+  return [carb, fat, protein];
+}
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
