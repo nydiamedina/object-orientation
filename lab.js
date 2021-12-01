@@ -155,7 +155,8 @@ var user = {
 */
 
 //Code Here
-
+user.name = 'Bryan G. Smith';
+user.email = 'bryan.smith@devmounta.in';
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -163,7 +164,7 @@ var user = {
 */
 
 //Code Here
-
+delete user.age;
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
