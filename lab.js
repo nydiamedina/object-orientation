@@ -174,8 +174,16 @@ delete user.age;
 */
 
 //Code here
+class Cat {
+  constructor(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  }
+}
 
-
+let myCat = new Cat('Kitty', 1, 'white');
+console.log(myCat.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -186,6 +194,20 @@ delete user.age;
 */
 
 //Code here
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+
+  castSpell() {
+    console.log(`${this.name} has cast ${this.favoriteSpell}`);
+  }
+}
+
+let wizard = new Wizard('Nydia', 25, 'Wingardium Leviosa');
+wizard.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
