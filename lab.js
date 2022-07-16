@@ -5,9 +5,9 @@
 */
 
 //Code here
-let me = {
+const me = {
   name: 'Nydia',
-  age: 25,
+  age: 26,
 }
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -45,7 +45,7 @@ console.log(dog['color']);
 
 //Code here
 let favoriteThings = {
-  band: 'Maroon 5',
+  band: 'Nightwish',
   food: 'Pizza',
   person: 'My mom',
   book: 'Deep Work',
@@ -67,8 +67,8 @@ favoriteThings.show = 'Friends';
 */
 
 //Code here
-favoriteThings.food = 'Chicken Nuggets';
-favoriteThings.book = 'Harry Potter';
+favoriteThings['food'] = 'Chicken Nuggets';
+favoriteThings['book'] = 'Harry Potter';
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -86,7 +86,7 @@ var carDetails = {
 */
 
 //Code Here
-let {color, make, model, year} = carDetails;
+let { color, make, model, year } = carDetails;
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -98,7 +98,7 @@ let {color, make, model, year} = carDetails;
 
 function greeting( obj ) {
   //Code Here
-  let {firstName, lastName, title} = obj;
+  let { firstName, lastName, title } = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -115,8 +115,8 @@ function greeting( obj ) {
 */
 
 //Code Here
-const totalPopulation = obj => {
-  let {utah, california, texas, arizona} = obj;
+const totalPopulation = (obj) => {
+  let { utah, california, texas, arizona } = obj;
   return utah + california + texas + arizona;
 }
 
@@ -131,8 +131,8 @@ const totalPopulation = obj => {
 */
 
 //Code Here
-const ingredients = obj => {
-  let {carb, fat, protein} = obj;
+const ingredients = (obj) => {
+  let { carb, fat, protein } = obj;
   return [carb, fat, protein];
 }
 
@@ -202,11 +202,11 @@ class Wizard {
   }
 
   castSpell() {
-    console.log(`${this.name} has cast ${this.favoriteSpell}`);
+    console.log(`${this.name} has cast ${this.favoriteSpell}.`);
   }
 }
 
-let wizard = new Wizard('Nydia', 25, 'Wingardium Leviosa');
+let wizard = new Wizard('Nydia', 26, 'Wingardium Leviosa');
 wizard.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
